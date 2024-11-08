@@ -83,4 +83,4 @@ where hire_date > (select hire_date from steven_hire_date)
 )
 select *
 from employees
-where hire_date in (select mn_date from min_date_after_steven);
+where hire_date = (select mn_date from min_date_after_steven);
